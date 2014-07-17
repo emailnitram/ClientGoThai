@@ -7,8 +7,9 @@
   </head>
   <body>
     <h2>Go Thai</h2>
-    <div ng-controller="GoThaiController">
-      <form ng-submit="submitWord()">
+    <div ng-controller="GoThaiController" ng-init="init();">
+      <h3>{{currentQuestion}}</h3>
+      <form ng-submit="submitWord();">
         <input type="text" ng-model="word"  size="30"
                placeholder="add new word here">
         <input class="btn-primary" type="submit" value="add">
